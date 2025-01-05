@@ -11,7 +11,6 @@ function HomePage() {
   return (
     <>
       <div className="homepage">
-        <h1 className="brand-name">BotaniPure.</h1>
         <div className="homepage-container">
           <div className="img-container">
             {data.map((product) => (

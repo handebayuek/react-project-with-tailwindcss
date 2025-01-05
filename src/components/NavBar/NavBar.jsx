@@ -1,15 +1,20 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { CartContext } from "../../contexts/CartContext";
+// import CartIcon from "../../assets/icons/user.svg";
 
 function NavBar() {
   const { state } = useContext(CartContext);
   const showQuantity = state.reduce(
     (acc, item) => acc + (item.quantity || 0),
-    0
+    0,
   );
   return (
     <>
+      <div>
+        <h1 className="brand-name">BotaniPure.</h1>
+      </div>
+
       <nav>
         <ul className="nav-ul">
           <li>
@@ -29,6 +34,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink to="/shoppingcart">
+              {/* <CartIcon /> */}
               Shopping Cart {showQuantity > 0 ? "(" + showQuantity + ")" : ""}
             </NavLink>
           </li>
