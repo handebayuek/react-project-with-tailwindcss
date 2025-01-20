@@ -14,8 +14,11 @@ export default defineConfig({
       }
     }
   },
+  optimizeDeps: {
+    include: ["swiper/react", "swiper"],
+  },
 
-    headers: {
+  /*   headers: {
       'Content-Security-Policy': [
         "default-src 'self'",
         "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
@@ -25,6 +28,6 @@ export default defineConfig({
         
         "frame-src 'self'"
       ].join('; ')
-    }
-  },
+    }, */
+  
 })

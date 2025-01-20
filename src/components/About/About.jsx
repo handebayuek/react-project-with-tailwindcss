@@ -3,12 +3,12 @@ import React from "react";
 function About() {
   return (
     <>
-      <div className="about-page">
-        <div className="left-side">
-          <h1 className="about-header">
+      <div className="">
+        <div className="">
+          <h1 className="">
             ABOUT <span>OUR</span> PRODUCTS
           </h1>
-          <h3 className="about-explain">
+          <h3 className="">
             Our organic skincare line offers a range of natural, eco-friendly
             products designed to nourish and rejuvenate your skin without the
             use of harmful chemicals. Made from the finest botanical
@@ -16,10 +16,10 @@ function About() {
             skin's natural beauty while promoting overall health and wellness.
           </h3>
         </div>
-        <div className="right-side">
-          <div className="about-container1">
+        <div className="">
+          <div className="">
             <div>
-              <h4 className="about-container-h4">safe and gentle</h4>
+              <h4 className="">safe and gentle</h4>
             </div>
             <div>
               <p>
@@ -30,9 +30,9 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="about-container2">
+          <div className="">
             <div>
-              <h4 className="about-container-h4">
+              <h4 className="">
                 eco-<span>friendly</span>
               </h4>
             </div>
@@ -45,9 +45,9 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="about-container3">
+          <div className="">
             <div>
-              <h4 className="about-container-h4">
+              <h4 className="">
                 nutrient-<span>rich</span>
               </h4>
             </div>
@@ -59,9 +59,9 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="about-container4">
+          <div className="">
             <div>
-              <h4 className="about-container-h4">
+              <h4 className="">
                 ethical and <span>cruelty-free</span>
               </h4>
             </div>

@@ -31,7 +31,9 @@
         "id": 3,
         "brand": "BotaniPure",
         "description":"Our serum is a potent blend of active ingredients designed to target specific skin concerns like fine lines, dark spots, and dehydration. It penetrates deep into the skin, delivering concentrated nutrients that promote a youthful, radiant complexion.",
-        "image":"/image/serum.jpg"
+        "image":"/image/serum.jpg",
+        "rating":4,
+        "isBestseller": true
     },
 
       {

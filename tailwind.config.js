@@ -26,6 +26,11 @@ export default {
         s: ["16px", "20px"],
         l: ["26px", "28px"],
       },
+      
+      screens:{
+        tablet: "640px",
+        special: "900px",
+      }
     },
   },
   plugins: [],
