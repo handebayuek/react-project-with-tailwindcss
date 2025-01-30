@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -115,7 +115,7 @@ function HomePage() {
       </div>
 
       {/* Bestseller Section */}
-      <div className="mx-auto flex min-w-[500px] flex-wrap items-center justify-around gap-4 px-10 pt-10">
+      <div className="mx-auto flex min-w-[500px] flex-wrap items-center justify-around gap-4 px-10 pb-8 pt-10">
         {bestsellers.slice(0, 3).map((product) => (
           <Link
             to={`/product/${product.id}`}
