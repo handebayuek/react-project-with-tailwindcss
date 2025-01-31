@@ -33,7 +33,7 @@ export default function Product() {
               <p className="text-lg font-semibold mt-2">{product.price}€</p>
               <button
                 onClick={() => addToCart(product)}
-                className="mt-4 px-4 py-2 bg-darkGreenColor text-white rounded-lg hover:bg-green-700 transition"
+                className="mt-4 px-4 py-2 bg-darkGreenColor text-white rounded-lg hover:bg-navbarColor transition"
               >
                 Add to Bag
               </button>
