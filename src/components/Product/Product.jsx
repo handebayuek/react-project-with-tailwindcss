@@ -8,7 +8,6 @@ export default function Product() {
 
   return (
     <div className="container mt-[64px] mx-auto p-4">
-      {/* Grid yapısı: Mobilde 1, büyük ekranda 2 sütun */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {state.map((product, index) => (
           <div
@@ -17,7 +16,7 @@ export default function Product() {
               index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             } gap-6 border p-6 rounded-lg shadow-md bg-white`}
           >
-            {/* Ürün Görseli */}
+            
             <div className="w-full md:w-1/2">
               <img
                 src={product.image}
@@ -26,7 +25,7 @@ export default function Product() {
               />
             </div>
 
-            {/* Ürün Bilgisi */}
+       
             <div className="w-full md:w-1/2 text-center md:text-left">
               <h2 className="text-2xl font-bold">{product.product_name}</h2>
               <h6 className="text-lg text-gray-500">{product.bulk}</h6>
