@@ -5,10 +5,10 @@
   "type": "module",
   "homepage": "https://handebayuek.github.io/react-project-with-tailwindcss",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "dom": "^0.0.3",
