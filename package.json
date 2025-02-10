@@ -43,5 +43,9 @@
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://handebayuek.github.io/react-project-with-tailwindcss.git"
+  }
 }
