@@ -1,5 +1,5 @@
-import React from "react";
 import { createContext, useReducer } from "react";
+import PropTypes from "prop-types";
 import reducer from "./reducer";
 import { data } from "./data.js";
 
@@ -15,5 +15,9 @@ function CartProvider({ children }) {
     </CartContext.Provider>
   );
 }
+
+CartProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export { CartContext, CartProvider };

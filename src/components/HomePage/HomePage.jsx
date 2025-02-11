@@ -1,4 +1,3 @@
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,7 +8,7 @@ import { useFetch } from "../../hooks/useFetch";
 import { Link } from "react-router-dom";
 
 function HomePage() {
-  const { data } = useFetch("./data.json");
+  const { data } = useFetch("../data.json");
 
   const bestsellers = data.filter((product) => product.isBestseller);
 
