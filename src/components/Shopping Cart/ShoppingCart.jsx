@@ -1,18 +1,19 @@
+
 import { useContext } from "react";
 import { useRemoveFromCart } from "../../hooks/useRemoveFromCart";
 import { CartContext } from "../../contexts/CartContext";
 import { useClearCart } from "../../hooks/useClearCart";
 
+
 function ShoppingCart() {
   const { state, dispatch } = useContext(CartContext);
-  console.log("state:", state);
   const removeFromCart = useRemoveFromCart();
   const clearCart = useClearCart();
 
   const handleQuantityChange = (productId, value) => {
     const numericValue = parseInt(value, 10);
     dispatch({
-      type: "UPDATE_QUANTITY",
+      type: 'UPDATE_QUANTITY',
       payload: { id: productId, quantity: numericValue },
     });
   };
@@ -25,9 +26,10 @@ function ShoppingCart() {
   const productList = state
     .filter((aa) => aa.quantity > 0)
     .map((state) => (
+
       <div key={state.id} className="flex items-center border-b pb-4">
         <img
-          src={state.image}
+          src={`${import.meta.env.BASE_URL}${state.image}`}
           alt={state.product_name}
           className="w-20 h-20 object-cover rounded-lg"
         />
@@ -60,11 +62,11 @@ function ShoppingCart() {
         {productList.length === 0 ? (
           <div className="flex flex-col text-center">
             <p className="text-lg font-semibold">Your shopping bag is empty</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mt-6">
               {state.map((product) => (
                 <div className="flex justify-center" key={product.id}>
                   <img
-                    src={product.image}
+                    src={`${import.meta.env.BASE_URL}${product.image}`}
                     alt={product.product_name}
                     className="w-24 h-24 object-cover rounded-lg shadow-md"
                   />
@@ -97,7 +99,8 @@ function ShoppingCart() {
         <div className="mt-6 flex flex-col items-center">
           <p className="text-lg font-semibold">Proceed to payment step</p>
           <i className="fa-solid fa-circle-arrow-right fa-2xl text-blue-500 mt-2"></i>
-        </div>
+
+      </div>
       )}
     </div>
   );

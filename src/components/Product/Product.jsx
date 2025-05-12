@@ -19,7 +19,7 @@ export default function Product() {
             
             <div className="w-full md:w-1/2">
               <img
-                src={product.image}
+                src={`${import.meta.env.BASE_URL}${product.image}`}
                 alt={product.product_name}
                 className="w-full h-auto object-cover rounded-lg"
               />

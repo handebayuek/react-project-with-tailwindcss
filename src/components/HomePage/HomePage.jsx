@@ -38,7 +38,7 @@ function HomePage() {
               </div>
               <div className="h-full w-[60%]">
                 <img
-                  src="/image/Carousel1.jpg"
+                  src="image/Carousel1.jpg"
                   alt="Carousel 1"
                   className="h-full rounded-lg object-cover"
                 />
@@ -58,7 +58,7 @@ function HomePage() {
               </div>
 
               <img
-                src="/image/Carousel2.jpg"
+                src="image/Carousel2.jpg"
                 alt="Carousel 2"
                 className="h-full w-2/3 rounded-lg object-cover"
               />
@@ -77,7 +77,7 @@ function HomePage() {
                 </p>
               </div>
               <img
-                src="/image/Carousel3.jpg"
+                src="image/Carousel3.jpg"
                 alt="Carousel 3"
                 className="h-full w-2/3 rounded-lg object-cover"
               />
